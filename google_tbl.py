@@ -37,8 +37,8 @@ async def send_email(data):
     #text = bs(ans, "html.parser").text
     smtpObj = smtplib.SMTP('smtp.gmail.com', 587)
     smtpObj.starttls()
-    smtpObj.login('Assistant.bot.Student@gmail.com', 'Assistant.bot.Student2022')
-    smtpObj.sendmail("assistant.bot.student@gmail.com", "vamp.be.live@gmail.com", msg.as_string())
+    smtpObj.login('Assistant.bot.Student@gmail.com', 'password')
+    smtpObj.sendmail("assistant.bot.student@gmail.com", "where_do_we_send", msg.as_string())
     print("SEND")
 
 async def find_googl_table_ru():
